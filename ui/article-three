@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            my webapp harshit srivastava 
+        </title>
+    </head>
+    <body>
+        <div>
+            <a href="/">home</a>
+        </div>
+        <hr>
+        <h3>
+            article-three
+        </h3>
+        <div>
+            march 1,2017.
+        </div>
+        <div>
+            <p>
+            this is my third page.  
+             </p>
+        </div>
+    </body>
+</html>
