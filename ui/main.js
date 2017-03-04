@@ -3,7 +3,7 @@ console.log('Loaded!');
 //change text of main text 
 var element = document.getElementById('main-text');
 
-element.innerHTML ='hey yo ,let\'s go';
+element.innerHTML ='hey yo ';
 
 //move the image 
 var img= document.getElementById('madi');
