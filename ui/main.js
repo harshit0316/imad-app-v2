@@ -6,9 +6,9 @@ var element = document.getElementById('main-text');
 element.innerHTML ='hey yo ';
 
 //move the image 
-var img= document.getElementById('madi');
+var img = document.getElementById('madi');
 function moveRight(){
-    marginLeft= marginLeft + 10;
+    marginLeft = marginLeft+10;
 img.style.marginLeft = marginLeft +'px';
     }
 img.onclick = function(){
