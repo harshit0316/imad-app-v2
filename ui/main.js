@@ -9,7 +9,7 @@ element.innerHTML ='hey yo ';
 var img= document.getElementById('madi');
 function moveRight(){
     marginleft= marginleft + 10;
-img.style.marginleft = marginLeft +'px';
+img.style.marginleft = marginleft +'px';
     }
 img.onclick = function(){
     var interval = setInterval(moveRight,100);
