@@ -5,14 +5,15 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var article-one={ 
- title: "mywebapp harshit srivastava", 
- heading: " article one",
- date: "sep 5,2016",
+var article-one=
+{ 
+ title: 'my webapp harshit srivastava' , 
+ heading: 'article one',
+ date:'sep 5,2016',
  content:`
   <p>
              This is my first article.
-  </p> `
+  </p> `,
 };
 
 
@@ -37,7 +38,7 @@ var htmltemplate =`<html>
           </div>
            <hr/>
         <h3>
-            article-one 
+            ${heading}
         </h3>
         <div>
             ${date}
@@ -61,9 +62,7 @@ app.get('/article-one', function (req, res) {
   res.send(createtemplate(article-one));
 });
 
-app.get('/shona', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'shona.html'));
-});
+
 
 app.get('/article-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
