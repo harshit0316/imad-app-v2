@@ -5,22 +5,40 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var article-one=
-{ 
- title: 'my webapp harshit srivastava' , 
+var articles= {
+ articleone: { 
+ title: 'first article |harshit srivastava' , 
  heading: 'article one',
- date:'sep 5,2016',
+ date: 'sep 5,2016',
  content:`
   <p>
              This is my first article.
   </p> `,
+},
+articletwo: {
+ title: 'second article |harshit srivastava' , 
+ heading: 'article two',
+ date: 'sep 15,2016',
+ content:`
+  <p>
+             This is my second article.
+  </p> `,
+},
+articlethree: {
+ title: 'third article |harshit srivastava' , 
+ heading: 'article three',
+ date: 'sep 15,2016',
+ content:`
+  <p>
+             This is my second article.
+  </p> `,
+},
 };
-
 
 function createtemplate(data){
        var title= data.title;
        var date= data.date;
-       var heading = data.heading:
+       var heading = data.heading;
        var content = data.content;
        
 var htmltemplate =`<html>
